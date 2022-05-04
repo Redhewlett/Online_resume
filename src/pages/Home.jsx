@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import styles from './Home.module.css'
 import character from '../assets/man_standing.png'
 import Bubble from '../assets/Bubble.svg'
@@ -22,16 +23,17 @@ export default function Home() {
         </p>
         <img src={Bubble_2} alt='blue comic bubble' />
       </div>
-
       <div className={styles.character}>
         <img src={character} alt='black man with glasses standing' />
       </div>
-
       <div className={styles.poly}>
-        <span>
-          <p>TEDDY</p>
-          <p>EDMOND</p>
-        </span>
+        <NavLink to='/About' exact='true' style={{ color: 'white' }}>
+          <span>
+            <p>TEDDY</p>
+            <p>EDMOND</p>
+          </span>
+        </NavLink>
+
         <img src={Polygon} alt='blue polygone' />
       </div>
     </div>

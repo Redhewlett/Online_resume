@@ -1,15 +1,47 @@
 .main_container {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   padding: 0px;
+  margin: 0;
 }
 
-.container_nav {
-  width: 20%;
+.content {
+  width: 80vw;
   height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  background-color: #007fad;
+  justify-content: center;
+  gap: 4em;
+}
+
+h1 {
+  padding-left: 1.5em;
+  background: rgb(225, 90, 81);
+  background: linear-gradient(90deg, rgba(225, 90, 81, 1) 0%, rgba(255, 255, 255, 0) 47%);
+  margin: 0px;
+}
+
+h2 {
+  padding-left: 2em;
+  color: #e15a51;
+  margin: 0px;
+}
+
+.skills {
+  width: 38vw;
+  display: flex;
+  gap: 2em 5em;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 3.1em;
+}
+
+.content img {
+  width: 2.5em;
+  transition: all cubic-bezier(0.08, -1.06, 0, 1.57) 320ms;
+}
+/* using svg pictures because fontawesome won't import programming language icons so we have ot use filter to get out color, using this code pen https://codepen.io/sosuke/pen/Pjoqqp */
+.content img:hover {
+  filter: invert(40%) sepia(62%) saturate(732%) hue-rotate(321deg) brightness(106%) contrast(78%);
+  transform: translateY(-0.4em);
 }

@@ -1,4 +1,4 @@
-export const projects = [
+const projects = [
   {
     id: '',
     name: '',
@@ -8,3 +8,5 @@ export const projects = [
     imgUrl: ''
   }
 ]
+
+export default projects

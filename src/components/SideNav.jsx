@@ -1,11 +1,15 @@
 import React from 'react'
 import styles from './SideNav.module.css'
 import { NavLink } from 'react-router-dom'
+import Avatar from '../assets/avatar.png'
 
 export default function SideNav() {
   return (
     <div>
       <nav className={styles.nav}>
+        <div className={styles.avatar}>
+          <img src={Avatar} alt='avatar black man with glasses' />
+        </div>
         <NavLink to='/skills' exact='true' className={(navData) => (navData.isActive ? styles.active : 'none')} style={{ textDecoration: 'none' }}>
           <li>Skills</li>
         </NavLink>

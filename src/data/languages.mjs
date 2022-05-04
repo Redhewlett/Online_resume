@@ -1,4 +1,4 @@
-export const languages = [
+const languages = [
   {
     id: 'fr',
     name: 'French',
@@ -15,3 +15,4 @@ export const languages = [
     Level: 'Intermediate 1 (Once upon a time)'
   }
 ]
+export default languages

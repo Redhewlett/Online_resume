@@ -69,6 +69,10 @@
   transition: all ease-in-out 350ms;
 }
 
+.poly:hover {
+  transform: translateY(-0.5em);
+}
+
 .poly span:hover {
   cursor: pointer;
 }

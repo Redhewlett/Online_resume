@@ -1,4 +1,4 @@
-export const education = [
+const education = [
   {
     id: 'eura',
     name: 'Eurasiam',
@@ -23,3 +23,5 @@ export const education = [
     learned: ['Mockup integration', 'CSS animation', 'Apply web standards', 'Responsive webDesign', 'SEO', 'JavaScript', 'REST API', 'MySql', 'Mongodb']
   }
 ]
+
+export default education
