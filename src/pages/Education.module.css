@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+}
+.main_container {
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  margin: 0;
+}
+
+.content {
+  opacity: 0;
+  width: 80vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+  animation-name: slidein;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateX(-15px);
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+h1 {
+  padding-left: 1.5em;
+  background: rgb(225, 90, 81);
+  background: linear-gradient(90deg, rgba(225, 90, 81, 1) 0%, rgba(255, 255, 255, 0) 47%);
+}
+
+h2 {
+  padding-left: 2em;
+  color: #e15a51;
+  animation-name: slidein;
+  animation-duration: 1s;
+  animation-delay: 200ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+h3 {
+  padding-left: 3em;
+  font-size: 1em;
+  margin-bottom: 2em;
+  animation-name: slidein;
+  animation-duration: 1s;
+  animation-delay: 200ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+  padding-bottom: 3em;
+}
+
+.education p {
+  padding-left: 3em;
+  width: 40vw;
+}
+
+.education_item_header {
+  width: 75vw;
+  margin-bottom: 0.7em;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.education_item_header p {
+  width: max-content;
+  color: dimgray;
+}
+
+.education_item ul {
+  padding-left: 3em;
+  color: dimgray;
+  list-style: url('../assets/icons/angle-right-solid.svg');
+}

@@ -6,12 +6,29 @@
 }
 
 .content {
+  opacity: 0;
   width: 80vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 4em;
+  animation-name: slidein;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateX(-15px);
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 
 h1 {
@@ -25,6 +42,11 @@ h2 {
   padding-left: 2em;
   color: #e15a51;
   margin: 0px;
+  animation-name: slidein;
+  animation-duration: 1s;
+  animation-delay: 200ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
 }
 
 .skills {
@@ -34,6 +56,36 @@ h2 {
   flex-wrap: wrap;
   align-items: center;
   padding-left: 3.1em;
+  animation-name: slidein;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+.learned_languages {
+  width: 38vw;
+  align-items: center;
+  padding-left: 1em;
+  animation-name: slidein;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.learned_languages li {
+  list-style: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-bottom: 1em;
+}
+
+.learned_languages_item {
+  display: flex;
+  align-items: baseline;
+}
+.learned_languages_item span {
+  font-size: 0.8em;
+  font-weight: lighter;
+  padding-left: 2em;
 }
 
 .content img {
@@ -44,4 +96,30 @@ h2 {
 .content img:hover {
   filter: invert(40%) sepia(62%) saturate(732%) hue-rotate(321deg) brightness(106%) contrast(78%);
   transform: translateY(-0.4em);
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }

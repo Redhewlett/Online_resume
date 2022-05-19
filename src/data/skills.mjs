@@ -14,67 +14,67 @@ const skills = [
   {
     id: 'ht5',
     name: 'HTML5',
-    libraries: '',
+    libraries: [],
     imgUrl: html5
   },
   {
     id: 'cs3',
     name: 'CSS3',
-    libraries: '',
+    libraries: [],
     imgUrl: css3
   },
   {
     id: 'sas',
     name: 'Sass',
-    libraries: '',
+    libraries: [],
     imgUrl: sass
   },
   {
     id: 'ps',
     name: 'Photoshop',
-    libraries: '',
+    libraries: [],
     imgUrl: photoshop
   },
   {
     id: 'ghb',
     name: 'Github',
-    libraries: '',
+    libraries: [],
     imgUrl: git
   },
   {
     id: 'jst',
     name: 'JavaScript',
-    libraries: '',
+    libraries: ['React.js ', 'Node.js ', 'Express.js '],
     imgUrl: javascript
   },
   {
     id: 'njs',
     name: 'NodeJS',
-    libraries: 'Express.js',
+    libraries: ['Express.js ', 'Multer ', 'Axios ', 'Dotenv ', 'Mongoose ', 'Helmet ', 'bcrypt '],
     imgUrl: node
   },
   {
     id: 'rct',
     name: 'React',
-    libraries: ['Styled Components', 'Mantine'],
+    libraries: ['Styled Components, ', 'Mantine, '],
     imgUrl: react
   },
   {
     id: 'mdb',
     name: 'Mongodb',
-    libraries: '',
+    libraries: [],
     imgUrl: mongodb
   },
   {
     id: 'sql',
     name: 'Mysql',
-    libraries: '',
+    libraries: [],
     imgUrl: mysql
   },
   {
     id: 'fgm',
     name: 'Figma',
-    libraries: '',
+    libraries: [],
     imgUrl: figma
   }
 ]
