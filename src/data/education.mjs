@@ -22,7 +22,7 @@ const education = [
     year: 'November 2021 - May 2022',
     description: '6 month Full time, project based learning programme. Working gradually with technologies from HTML5 to JavaScript or Mysql.',
     degree: 'National Directory of Professional Certifications ✔ (This diploma is at Associates-level on the EQF (European Qualifications Framework)',
-    learned: ['Mockup integration', 'CSS animation', 'Apply web standards', 'Responsive webDesign', 'SEO', 'JavaScript', 'REST API', 'MySql', 'Mongodb']
+    learned: ['Mockup integration', 'CSS animation', 'Responsive webDesign', 'SEO', 'JavaScript', 'REST API', 'MySql', 'Mongodb']
   }
 ]
 

@@ -56,7 +56,7 @@ const skills = [
   {
     id: 'rct',
     name: 'React',
-    libraries: ['Styled Components, ', 'Mantine, '],
+    libraries: ['Styled Components ', 'Mantine '],
     imgUrl: react
   },
   {

@@ -42,7 +42,7 @@
   line-height: 40px;
   position: absolute;
   left: 470px;
-  top: 80px;
+  top: 100px;
   z-index: 1;
   text-align: center;
   font-size: 0.9em;
@@ -83,7 +83,6 @@
   position: absolute;
   top: 100px;
   left: 62px;
-  line-height: 0.3em;
 }
 
 .poly p:nth-of-type(2) {
