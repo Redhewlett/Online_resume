@@ -25,7 +25,7 @@ export default function Skills() {
                 transitionDuration={300}
                 transitionTimingFunction='ease-in-out'
                 closeDelay={400}
-                label={skills.libraries.length ? `Libraries: ${skills.libraries}` : 'None'}
+                label={skills.libraries.length ? `${skills.name} Libraries: ${skills.libraries}` : `${skills.name}`}
               >
                 <img src={skills.imgUrl} alt={`${skills.name}_icons`} />
               </Tooltip>

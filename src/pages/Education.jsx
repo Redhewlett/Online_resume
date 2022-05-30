@@ -23,8 +23,8 @@ export default function Education() {
                 <p>{education.description}</p>
                 <p>what i learned: </p>
                 <ul>
-                  {education.learned.map((learned) => (
-                    <li>{learned}</li>
+                  {education.learned.map((learned, index) => (
+                    <li key={index}>{learned}</li>
                   ))}
                 </ul>
               </div>
