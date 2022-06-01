@@ -55,11 +55,13 @@
 .project_elements {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 2em;
 }
 
 .project_item {
   display: flex;
+  width: 67vw;
   gap: 2em;
 }
 
@@ -67,6 +69,10 @@
   width: 30vw;
   height: auto;
   filter: blur(2px);
+  animation-name: slidein;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
   transition: all ease-in-out 250ms;
 }
 

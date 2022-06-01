@@ -7,12 +7,12 @@ const languages = [
   {
     id: 'en',
     name: 'English',
-    level: 'Fluent'
+    level: 'C1 level'
   },
   {
     id: 'jp',
     name: 'Japanese',
-    level: 'Intermediate 1 (Once upon a time)'
+    level: 'N3 level'
   }
 ]
 export default languages

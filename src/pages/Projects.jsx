@@ -27,9 +27,13 @@ export default function Projects() {
                     <a href={project.repository} target='_blank' rel='noopener noreferrer'>
                       <img src={git} alt='github_icon' className={styles.icons} />
                     </a>
-                    <a href={project.url} target='_blank' rel='noopener noreferrer'>
-                      <img src={link} alt='arrow-up-right-from-square-solid' className={styles.icons} />
-                    </a>
+                    {project.url === 'none' ? (
+                      ' '
+                    ) : (
+                      <a href={project.url} target='_blank' rel='noopener noreferrer'>
+                        <img src={link} alt='arrow-up-right-from-square-solid' className={styles.icons} />
+                      </a>
+                    )}
                   </span>
                 </div>
               </div>

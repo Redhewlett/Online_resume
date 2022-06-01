@@ -2,6 +2,8 @@ import p2 from '../assets/projects/p2_main.png'
 import p3 from '../assets/projects/p3_main.png'
 import p4 from '../assets/projects/p4_main.png'
 import p5 from '../assets/projects/p5_main.png'
+import p6 from '../assets/projects/p6_main.png'
+import p7 from '../assets/projects/p7_main.png'
 const projects = [
   {
     id: 'p2',
@@ -14,8 +16,8 @@ const projects = [
   },
   {
     id: 'p3',
-    name: 'Oh my food',
-    description: 'Oh my food is a webapp that lets you discover restaurant and lets you to book to avoid queue',
+    name: 'Ohmyfood',
+    description: 'Ohmyfood is a webapp that lets you discover restaurant and lets you to book to avoid queue',
     repository: 'https://github.com/Redhewlett/ohmyfood.github.io',
     url: 'https://redhewlett.github.io/ohmyfood.github.io/',
     techno: 'HTML CSS Animation keyframes Responsive',
@@ -35,11 +37,31 @@ const projects = [
     id: 'p5',
     name: 'Kanap',
     description:
-      'This project was and introduction to javascript and api s. The goal was to communicate with an api to fetch/use data and manage user choices/input .',
+      'This project was and introduction to javascript and API. The goal was to communicate with an API to fetch/use data and manage user choices/input.',
     repository: 'https://github.com/Redhewlett/p5-kanap',
-    url: 'https://github.com/Redhewlett/p5-kanap',
-    techno: 'Javascript Api',
+    url: 'none',
+    techno: 'Javascript API',
     imgUrl: p5
+  },
+  {
+    id: 'p6',
+    name: 'PIIQUANTE',
+    description:
+      'The goal here was to build an API for a hotsauce webapp. Users can register with an email, create a sauce the like and others can interact by liking or disliking the sauce. Learning the basics of CRUD and how to secure user data.',
+    repository: 'https://github.com/Redhewlett/p6-piiquante',
+    url: 'none',
+    techno: 'ExpressJS API MongoDB NoSQL Bcrypt JWT Helmet Multer',
+    imgUrl: p6
+  },
+  {
+    id: 'p7',
+    name: 'Groupomania',
+    description:
+      'In an effort to build a community aspect among their employee a company wants to build a their private social media. In this first version employees can share articles and link with each other. they can also manage their articles. Re-applying CRUD basics.',
+    repository: 'https://github.com/Redhewlett/P7-groupomania',
+    url: 'none',
+    techno: 'Javascript Express ReactJs Mantine MySQL',
+    imgUrl: p7
   }
 ]
 
