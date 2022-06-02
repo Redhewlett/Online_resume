@@ -1,7 +1,7 @@
 import React from 'react'
 import SideNav from '../components/SideNav'
 import projects from '../data/projects.mjs'
-import styles from './Project.module.css'
+import styles from './Projects.module.css'
 import git from '../assets/icons/github-brands.svg'
 import link from '../assets/icons/arrow-up-right-from-square-solid.svg'
 import { ScrollArea } from '@mantine/core'

@@ -14,11 +14,11 @@ export default function About() {
         <h1>About</h1>
         <div className={styles.content_text_box}>
           <p>
-            I'm a junior web developper with a background in applied arts and Manga.
+            I'm a junior web developer with a background in applied arts and Manga.
             <br />
             My journey started when i began studying applied arts in highschool. I picked up tools
             <br />
-            that allowed me to developp my creative / critical thinking among other skills. Believe it or not this is where I crossed path with a developper who
+            that allowed me to developp my creative / critical thinking among other skills. Believe it or not this is where I crossed path with a developer who
             introduced me to <strong>HTML, CSS and PHP</strong>.<br />
             <br />
             Afterwards, I studied the art of Manga and the Japanese language and cultur.

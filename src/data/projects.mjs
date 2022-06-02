@@ -4,6 +4,7 @@ import p4 from '../assets/projects/p4_main.png'
 import p5 from '../assets/projects/p5_main.png'
 import p6 from '../assets/projects/p6_main.png'
 import p7 from '../assets/projects/p7_main.png'
+import rps from '../assets/projects/rockpaperscissors.png'
 const projects = [
   {
     id: 'p2',
@@ -20,7 +21,7 @@ const projects = [
     description: 'Ohmyfood is a webapp that lets you discover restaurant and lets you to book to avoid queue',
     repository: 'https://github.com/Redhewlett/ohmyfood.github.io',
     url: 'https://redhewlett.github.io/ohmyfood.github.io/',
-    techno: 'HTML CSS Animation keyframes Responsive',
+    techno: 'HTML CSS Transitions keyframes Responsive',
     imgUrl: p3
   },
   {
@@ -62,6 +63,15 @@ const projects = [
     url: 'none',
     techno: 'Javascript Express ReactJs Mantine MySQL',
     imgUrl: p7
+  },
+  {
+    id: 'rps',
+    name: 'Rock Paper Scissors',
+    description: 'While learning javascript I found a tutorial to build this simple rock paper scissors game. I plan to rewrite this project in with React',
+    repository: 'https://github.com/Redhewlett/RockPaperScissors',
+    url: 'https://redhewlett.github.io/RockPaperScissors/',
+    techno: 'Javascript HTML CSS',
+    imgUrl: rps
   }
 ]
 

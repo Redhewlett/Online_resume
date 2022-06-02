@@ -3,8 +3,8 @@ const education = [
     id: 'opcs',
     name: 'OpenClassrooms',
     year: 'November 2021 - May 2022',
-    description: '6 month Full time, project based learning programme. Working gradually with technologies from HTML5 to JavaScript or Mysql.',
-    degree: 'Web Developper - National Directory of Professional Certifications',
+    description: '6 month Full time, project based learning program. Working gradually with technologies from HTML5 to JavaScript, Mysql...',
+    degree: 'Web Developer - National Directory of Professional Certifications',
     learned: ['Mockup integration', 'CSS animation', 'Responsive webDesign', 'SEO', 'JavaScript', 'REST API', 'MySql', 'Mongodb']
   },
   {

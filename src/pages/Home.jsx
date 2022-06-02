@@ -11,7 +11,7 @@ export default function Home() {
       <div className={styles.bubbles}>
         <p>
           Hi there,
-          <br /> i am a junior Web <strong>developper</strong>.<br /> This is my online
+          <br /> i am a junior Web <strong>developer</strong>.<br /> This is my online
           <br /> resume. Feel free to explore it.
         </p>
         <img src={Bubble} alt='blue comic bubble' />
