@@ -144,32 +144,37 @@
 
 /* phones */
 @media screen and (max-width: 480px) {
+  .main_container {
+    width: 100vw;
+    height: 100vh;
+  }
   .character img {
-    width: 87vw;
+    width: 60vw;
     top: 12vh;
-    left: 44vw;
+    left: 25vw;
   }
 
   .bubbles {
-    bottom: 29vh;
+    bottom: 33vh;
     left: 1vw;
   }
 
   .bubbles img {
     opacity: 0;
-    width: 74vw;
+    width: 40vw;
   }
 
   .bubbles p {
-    width: 65vw;
-    font-size: 4.5vw;
+    width: 30vw;
+    font-size: 3vw;
     line-height: 1em;
-    top: 12vw;
+    top: 5vw;
+    left: 2vw;
   }
 
   .poly {
-    bottom: 24vh;
-    right: -24vw;
+    bottom: 28vh;
+    right: 5vw;
   }
 
   .poly img {

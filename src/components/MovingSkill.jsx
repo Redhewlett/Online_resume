@@ -6,6 +6,9 @@ const Container = styled.div`
   padding: 2em;
   display: flex;
   justify-content: center;
+  @media screen and (max-width: 480px) {
+    width: 90vw;
+  }
 `
 //TODO : put a play buttton and use props to insert play or pause inside the styled span!
 const MovingSpans = styled.span`
@@ -89,6 +92,14 @@ const MovingSpans = styled.span`
   & button {
     padding: 0.5em;
     margin-left: 1em;
+  }
+  @media screen and (max-width: 480px) {
+    span {
+      font-size: 6vw;
+    }
+    & span:nth-of-type(1) {
+      font-size: 7vw;
+    }
   }
 `
 

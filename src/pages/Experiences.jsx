@@ -14,7 +14,7 @@ export default function Experiences() {
         <ScrollArea style={{ height: 950 }} type='always' scrollbarSize={12}>
           <div className={styles.content_text}>
             <p>
-              I completed my trainning in May, and I am looking forward to work with a company where I can keep developping my skills.
+              I completed my trainning in May, and I am looking forward to work with a company where I can keep developing my skills.
               <br />
               If you went through the projects you have an idea of what I can do, but let me sum'up my trainning's experience:
             </p>

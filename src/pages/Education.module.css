@@ -8,13 +8,13 @@
   margin: 0;
 }
 
-.content {
+.education_content {
   opacity: 0;
   width: 80vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   gap: 2em;
   animation-name: slidein;
   animation-duration: 1s;
@@ -65,10 +65,9 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 5em;
-  padding-bottom: 3em;
 }
 
-.education p {
+.education_content p {
   padding-left: 3em;
   width: 40vw;
   animation-name: slidein;
@@ -92,7 +91,7 @@ h3 {
   align-items: baseline;
   justify-content: space-between;
 }
-.education_item_header p {
+.education_item_header span {
   width: max-content;
   color: dimgray;
 }
@@ -101,4 +100,42 @@ h3 {
   padding-left: 3em;
   color: dimgray;
   list-style: url('../assets/icons/angle-right-solid.svg');
+}
+
+/* media queries - switching to an or*/
+/* phones */
+@media screen and (max-width: 480px) {
+  .main_container {
+    flex-direction: column;
+  }
+  .content {
+    margin-top: 37vw;
+    padding-bottom: 2em;
+  }
+
+  .education_content {
+    margin-top: 10vw;
+    width: 100vw;
+    padding-left: 0.5em;
+  }
+
+  .education_item_header {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  h1,
+  h2,
+  h3,
+  .education_item_header span {
+    padding-left: 0.5em;
+  }
+
+  .education_item p {
+    width: 100vw;
+    padding: 0em;
+    text-align: left;
+  }
 }

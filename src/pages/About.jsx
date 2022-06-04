@@ -10,15 +10,15 @@ export default function About() {
       <div className={styles.container_nav}>
         <SideNav />
       </div>
-      <div className={styles.content}>
+      <div className={styles.about_content}>
         <h1>About</h1>
         <div className={styles.content_text_box}>
           <p>
             I'm a junior web developer with a background in applied arts and Manga.
             <br />
-            My journey started when i began studying applied arts in highschool. I picked up tools
+            My journey started when I began studying applied arts in highschool. I picked up tools / skills
             <br />
-            that allowed me to developp my creative / critical thinking among other skills. Believe it or not this is where I crossed path with a developer who
+            that allowed me to develop my creative / critical thinking and other skills. Believe it or not this is where I crossed path with a developer who
             introduced me to <strong>HTML, CSS and PHP</strong>.<br />
             <br />
             Afterwards, I studied the art of Manga and the Japanese language / cultur.

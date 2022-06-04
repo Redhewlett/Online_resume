@@ -62,3 +62,25 @@
     transform: translateX(0px);
   }
 }
+
+@media screen and (max-width: 480px) {
+  .main_container {
+    flex-direction: column;
+  }
+
+  .container_nav {
+    width: 100vw;
+    height: 10vh;
+  }
+
+  .content {
+    width: 100vw;
+    margin-top: 35vw;
+    margin-bottom: 1em;
+    gap: 2em;
+  }
+  .content_text {
+    width: 100vw;
+    padding-left: 0.5em;
+  }
+}

@@ -33,12 +33,45 @@ nav a:hover {
   outline: 3px solid #e15a51;
   transition: all ease-in-out 250ms;
 }
-.avatar:hover {
-  transform: translateY(-0.4em);
-}
 
 .avatar img {
   width: 200px;
   height: 200px;
   transform: translateY(10px);
+}
+
+.burger {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 480px) {
+  .nav {
+    width: 100vw;
+    height: 10vh;
+    gap: 0em;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  nav a {
+    font-size: 6vw;
+  }
+
+  .avatar {
+    display: none;
+  }
+
+  .burger {
+    width: 100%;
+  }
+  .collapse {
+    width: 100vw;
+    text-align: right;
+    padding: 0vw 3vw 3vw 3vw;
+    background-color: #007fad;
+    position: absolute;
+    top: 21vw;
+    right: 0px;
+  }
 }

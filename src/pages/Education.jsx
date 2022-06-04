@@ -10,13 +10,13 @@ export default function Education() {
 
       <div className={styles.content}>
         <h1>Education</h1>
-        <ScrollArea style={{ height: 950 }} type='always' scrollbarSize={12}>
-          <div className={styles.education}>
+        <ScrollArea style={{ height: 900 }} type='always' scrollbarSize={12}>
+          <div className={styles.education_content}>
             {education.map((education) => (
               <div className={styles.education_item} key={education.id}>
                 <div className={styles.education_item_header}>
                   <h2>{education.name}</h2>
-                  <p>{education.year}</p>
+                  <span>{education.year}</span>
                 </div>
 
                 <h3>{education.degree}</h3>

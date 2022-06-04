@@ -1,15 +1,20 @@
-.main_container {
+.main_container,
+.skills_content,
+.skills,
+.learned_languages_item {
   display: flex;
+}
+
+.main_container {
   flex-direction: row;
   padding: 0px;
   margin: 0;
 }
 
-.content {
+.skills_content {
   opacity: 0;
   width: 80vw;
   height: 100vh;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 4em;
@@ -31,14 +36,14 @@
   }
 }
 
-h1 {
+.skills_content h1 {
   padding-left: 1.5em;
   background: rgb(225, 90, 81);
   background: linear-gradient(90deg, rgba(225, 90, 81, 1) 0%, rgba(255, 255, 255, 0) 47%);
   margin: 0px;
 }
 
-h2 {
+.skills_content h2 {
   padding-left: 2em;
   color: #e15a51;
   margin: 0px;
@@ -51,7 +56,6 @@ h2 {
 
 .skills {
   width: 38vw;
-  display: flex;
   gap: 2em 5em;
   flex-wrap: wrap;
   align-items: center;
@@ -79,7 +83,6 @@ h2 {
 }
 
 .learned_languages_item {
-  display: flex;
   align-items: baseline;
 }
 .learned_languages_item span {
@@ -88,7 +91,7 @@ h2 {
   padding-left: 2em;
 }
 
-.content img {
+.skills_content img {
   width: 2.5em;
   transition: all ease-in-out 320ms;
 }
@@ -122,4 +125,55 @@ h2 {
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
   visibility: visible;
+}
+
+/* media queries */
+/* phones */
+@media screen and (max-width: 480px) {
+  .main_container {
+    flex-direction: column;
+  }
+
+  .container_nav {
+    width: 40vw;
+  }
+
+  .skills_content {
+    width: 60vw;
+    height: 80vh;
+    gap: 2em;
+    margin-top: 13vw;
+  }
+
+  .skills_content h2,
+  .skills_content h1 {
+    padding-left: 0em;
+    text-align: left;
+    padding-left: 0.5em;
+  }
+  .skills {
+    width: 100vw;
+    gap: 1em 4em;
+    padding-left: 0;
+    justify-content: space-around;
+  }
+
+  .skills_content img {
+    width: 10vw;
+  }
+
+  .learned_languages {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+  }
+  .learned_languages ul {
+    padding-left: 0;
+  }
+  .learned_languages li {
+    font-size: 5vw;
+
+    padding-bottom: 0.5em;
+  }
 }
