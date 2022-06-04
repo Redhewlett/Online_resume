@@ -21,8 +21,8 @@ export default function About() {
             that allowed me to developp my creative / critical thinking among other skills. Believe it or not this is where I crossed path with a developer who
             introduced me to <strong>HTML, CSS and PHP</strong>.<br />
             <br />
-            Afterwards, I studied the art of Manga and the Japanese language and cultur.
-            <br />I arrived at junction in my life and i had the opportunity to enroll for a training in web developpement.
+            Afterwards, I studied the art of Manga and the Japanese language / cultur.
+            <br />I arrived at junction in my life and I had the opportunity to enroll for a training in web developpement.
             <br />I didn't not hesitate and <strong>6 month</strong> later here I am 😁.
           </p>
         </div>

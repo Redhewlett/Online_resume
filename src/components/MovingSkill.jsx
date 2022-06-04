@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { useState } from 'react'
 
 const Container = styled.div`
   width: 40vw;
@@ -13,8 +14,9 @@ const MovingSpans = styled.span`
     position: relative;
     animation-name: upAndDown;
     animation-duration: 2s;
-    animation-iteration-count: 5;
+    animation-iteration-count: infinite;
     animation-fill-mode: forwards;
+    animation-play-state: ${(props) => props.playState};
   }
   & span:nth-of-type(1) {
     font-size: 2.4em;
@@ -60,28 +62,51 @@ const MovingSpans = styled.span`
   @keyframes upAndDown {
     0% {
       top: 0;
+      color: white;
+      text-shadow: -1px -1px 3px rgba(80, 80, 80, 1);
     }
     25% {
-      top: -10px;
+      top: -8px;
       color: #007fad;
+      text-shadow: 1px 11px 6px rgba(108, 108, 108, 0.65);
     }
     50% {
       top: 0;
+      color: white;
+      text-shadow: -1px -1px 3px rgba(80, 80, 80, 1);
     }
     75% {
       top: -5px;
       color: #e15a51;
+      text-shadow: 0px 7px 6px rgba(108, 108, 108, 0.65);
     }
     100% {
       top: 0;
+      color: white;
+      text-shadow: -1px -1px 3px rgba(80, 80, 80, 1);
     }
+  }
+  & button {
+    padding: 0.5em;
+    margin-left: 1em;
   }
 `
 
 export default function MovingSkill() {
+  const [isPlaying, setIsPlaying] = useState('paused')
+
+  const handlePlayButton = (e) => {
+    if (e.target.innerHTML === 'Pause') {
+      e.target.innerHTML = 'Play'
+      setIsPlaying('paused')
+    } else {
+      e.target.innerHTML = 'Pause'
+      setIsPlaying('running')
+    }
+  }
   return (
     <Container>
-      <MovingSpans>
+      <MovingSpans playState={isPlaying}>
         <span>H</span>
         <span>E</span>
         <span>L</span>
@@ -92,6 +117,9 @@ export default function MovingSkill() {
         <span>R</span>
         <span>L</span>
         <span>D</span>
+        <button type='button' onClick={handlePlayButton}>
+          Play
+        </button>
       </MovingSpans>
     </Container>
   )

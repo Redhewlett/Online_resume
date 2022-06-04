@@ -43,6 +43,14 @@
   animation-fill-mode: forwards;
 }
 
+.content_text ul {
+  margin-top: 1em;
+  list-style: url('../assets/icons/angle-right-solid.svg');
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
 @keyframes slidein {
   from {
     transform: translateX(-15px);

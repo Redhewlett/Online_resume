@@ -1,22 +1,21 @@
 .main_container,
-.character {
+.character,
+.bubbles,
+.poly {
   display: flex;
   align-items: center;
   color: white;
 }
-
-.bubbles,
-.bubbles img {
-  position: absolute;
-}
 .bubbles {
-  font-size: 1.4em;
+  justify-content: center;
+  position: relative;
+  bottom: 25vh;
+  left: 18vw;
 }
 
 .bubbles img {
   opacity: 0;
-  left: 21vw;
-  bottom: 6.8vw;
+  width: 23vw;
   animation-name: slidein;
   animation-duration: 1s;
   animation-delay: 300ms;
@@ -30,11 +29,11 @@
 
 .bubbles p {
   opacity: 0;
-  width: 300px;
-  line-height: 40px;
+  width: 20vw;
+  left: 0vw;
+  font-size: 1.2vw;
+  line-height: 1.5em;
   position: absolute;
-  left: 22.5vw;
-  bottom: 8.5vw;
   z-index: 1;
   text-align: center;
   animation-name: slidein;
@@ -53,8 +52,10 @@
 
 .character img {
   opacity: 0;
-  width: 15vw;
+  width: 16vmax;
   height: auto;
+  position: absolute;
+  left: 43vw;
   animation-name: fadein;
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
@@ -62,12 +63,19 @@
 }
 
 .poly {
+  justify-content: center;
+  position: relative;
+  bottom: 10vh;
+  right: 10vw;
+}
+
+.poly a {
+  text-decoration: none;
+}
+
+.poly img {
   opacity: 0;
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  top: 200px;
-  right: 500px;
+  width: 20vmax;
   animation-name: slidefromright;
   animation-duration: 2s;
   animation-delay: 300ms;
@@ -75,21 +83,18 @@
   animation-fill-mode: forwards;
 }
 
-.poly:hover {
-  transform: translateY(-0.5em);
-}
-
-.poly span:hover {
+.poly p:hover {
   cursor: pointer;
 }
 
-.poly span {
+.poly p {
+  width: 100%;
   opacity: 0;
-  font-size: 3em;
+  font-size: 2.5vw;
   text-align: center;
   position: absolute;
-  top: 100px;
-  left: 62px;
+  bottom: 8vw;
+  z-index: 1;
   animation-delay: 400ms;
   animation-name: slidefromright;
   animation-duration: 1.5s;
@@ -97,7 +102,7 @@
   animation-fill-mode: forwards;
 }
 
-.poly p:nth-of-type(2) {
+.poly p strong {
   color: #f49fad;
 }
 
@@ -132,5 +137,88 @@
   to {
     opacity: 1;
     transform: translateX(0px);
+  }
+}
+
+/* media queries */
+
+/* phones */
+@media screen and (max-width: 480px) {
+  .character img {
+    width: 87vw;
+    top: 12vh;
+    left: 44vw;
+  }
+
+  .bubbles {
+    bottom: 29vh;
+    left: 1vw;
+  }
+
+  .bubbles img {
+    opacity: 0;
+    width: 74vw;
+  }
+
+  .bubbles p {
+    width: 65vw;
+    font-size: 4.5vw;
+    line-height: 1em;
+    top: 12vw;
+  }
+
+  .poly {
+    bottom: 24vh;
+    right: -24vw;
+  }
+
+  .poly img {
+    width: 30vw;
+  }
+
+  .poly p {
+    font-size: 3.4vw;
+    top: 9vw;
+  }
+}
+
+/* tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .character img {
+    width: 53vw;
+    top: 8vh;
+    left: 44vw;
+  }
+
+  .bubbles {
+    bottom: 32vh;
+    left: 1vw;
+  }
+
+  .bubbles img {
+    opacity: 0;
+    width: 52vw;
+  }
+
+  .bubbles p {
+    width: 52vw;
+    font-size: 2.8vw;
+    line-height: 1em;
+    top: 12vw;
+    left: -3vw;
+  }
+
+  .poly {
+    top: -30vh;
+    right: 1vw;
+  }
+
+  .poly img {
+    width: 20vw;
+  }
+
+  .poly p {
+    font-size: 2.4vw;
+    top: 7vw;
   }
 }

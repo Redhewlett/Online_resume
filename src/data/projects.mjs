@@ -41,7 +41,7 @@ const projects = [
       'This project was and introduction to javascript and API. The goal was to communicate with an API to fetch/use data and manage user choices/input.',
     repository: 'https://github.com/Redhewlett/p5-kanap',
     url: 'none',
-    techno: 'Javascript API',
+    techno: 'Javascript API Regex',
     imgUrl: p5
   },
   {

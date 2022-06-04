@@ -71,6 +71,18 @@ h3 {
 .education p {
   padding-left: 3em;
   width: 40vw;
+  animation-name: slidein;
+  animation-duration: 1s;
+  animation-delay: 200ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+.education ul {
+  animation-name: slidein;
+  animation-duration: 1s;
+  animation-delay: 200ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
 }
 
 .education_item_header {

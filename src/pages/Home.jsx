@@ -11,8 +11,8 @@ export default function Home() {
       <div className={styles.bubbles}>
         <p>
           Hi there,
-          <br /> i am a junior Web <strong>developer</strong>.<br /> This is my online
-          <br /> resume. Feel free to explore it.
+          <br /> I am a junior Web <strong>developer</strong>.<br /> This is my online resume.
+          <br /> Feel free to explore it.
         </p>
         <img src={Bubble} alt='blue comic bubble' />
       </div>
@@ -21,10 +21,10 @@ export default function Home() {
       </div>
       <div className={styles.poly}>
         <NavLink to='/About' exact='true' style={{ color: 'white' }}>
-          <span>
-            <p>TEDDY</p>
-            <p>EDMOND</p>
-          </span>
+          <p>
+            TEDDY <br />
+            <strong>EDMOND </strong>
+          </p>
         </NavLink>
 
         <img src={Polygon} alt='blue polygone' />
