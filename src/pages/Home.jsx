@@ -20,7 +20,7 @@ export default function Home() {
         <img src={character} alt='black man with glasses standing' />
       </div>
       <div className={styles.poly}>
-        <NavLink to='/About' exact='true' style={{ color: 'white' }}>
+        <NavLink to='/about' exact='true' style={{ color: 'white' }}>
           <p>
             TEDDY <br />
             <strong>EDMOND </strong>
