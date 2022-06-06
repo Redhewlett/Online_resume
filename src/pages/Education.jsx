@@ -6,11 +6,13 @@ import { ScrollArea } from '@mantine/core'
 export default function Education() {
   return (
     <div className={styles.main_container}>
-      <SideNav />
+      <div className={styles.container_nav}>
+        <SideNav />
+      </div>
 
       <div className={styles.content}>
         <h1>Education</h1>
-        <ScrollArea style={{ height: 900 }} type='always' scrollbarSize={12}>
+        <ScrollArea style={{ height: 760 }} type='always' scrollbarSize={12}>
           <div className={styles.education_content}>
             {education.map((education) => (
               <div className={styles.education_item} key={education.id}>

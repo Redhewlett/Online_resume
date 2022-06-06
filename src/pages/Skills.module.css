@@ -17,7 +17,7 @@
   height: 100vh;
   flex-direction: column;
   justify-content: center;
-  gap: 4em;
+  gap: 2em;
   animation-name: slidein;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
@@ -151,6 +151,13 @@
     text-align: left;
     padding-left: 0.5em;
   }
+
+  .skills_content h1 {
+    width: 100vw;
+
+    background: linear-gradient(90deg, rgba(225, 90, 81, 1) 0%, rgba(255, 255, 255, 0) 50%);
+  }
+
   .skills {
     width: 100vw;
     gap: 1em 4em;
@@ -173,7 +180,95 @@
   }
   .learned_languages li {
     font-size: 5vw;
+    padding-bottom: 0.5em;
+  }
+}
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .main_container {
+    flex-direction: column;
+  }
+
+  .container_nav {
+    width: 40vw;
+  }
+
+  .skills_content {
+    width: 60vw;
+    height: 80vh;
+    gap: 2em;
+    margin-top: 10vw;
+  }
+
+  .skills_content h2,
+  .skills_content h1 {
+    text-align: left;
+    padding-left: 0.5em;
+  }
+
+  .skills_content h1 {
+    width: 100vw;
+    background: linear-gradient(90deg, rgba(225, 90, 81, 1) 0%, rgba(255, 255, 255, 0) 50%);
+  }
+
+  .skills {
+    width: 100vw;
+    gap: 1em 4em;
+    padding-left: 0;
+    justify-content: space-around;
+  }
+
+  .skills_content img {
+    width: 8vw;
+  }
+
+  .learned_languages {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+  }
+  .learned_languages ul {
+    padding-left: 0;
+  }
+  .learned_languages li {
+    font-size: 5vw;
+    padding-bottom: 0.5em;
+  }
+}
+
+/* laptop and smallscreens */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container_nav {
+    width: 20vw;
+  }
+
+  .skills_content {
+    width: 80vw;
+    gap: 2em;
+  }
+
+  .skills_content h1 {
+    width: 100%;
+    background: linear-gradient(90deg, rgba(225, 90, 81, 1) 0%, rgba(255, 255, 255, 0) 50%);
+  }
+
+  .skills {
+    width: 90%;
+    gap: 1em 3em;
+  }
+
+  .skills_content img {
+    width: 6vw;
+  }
+
+  .learned_languages {
+    width: 90%;
+    display: flex;
+  }
+  .learned_languages li {
+    font-size: 3vw;
     padding-bottom: 0.5em;
   }
 }

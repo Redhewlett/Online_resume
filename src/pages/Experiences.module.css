@@ -14,7 +14,7 @@
   background-color: #007fad;
 }
 
-.content {
+.experience_content {
   opacity: 0;
   width: 80vw;
   height: 100vh;
@@ -26,6 +26,11 @@
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
+}
+
+.experience_content h1 {
+  background: rgb(225, 90, 81);
+  background: linear-gradient(90deg, rgba(225, 90, 81, 1) 0%, rgba(255, 255, 255, 0) 47%);
 }
 
 .content_text {
@@ -63,6 +68,10 @@
   }
 }
 
+/* media queries */
+
+/* phones */
+
 @media screen and (max-width: 480px) {
   .main_container {
     flex-direction: column;
@@ -73,14 +82,73 @@
     height: 10vh;
   }
 
-  .content {
+  .experience_content {
+    margin-top: 5vh;
     width: 100vw;
-    margin-top: 35vw;
-    margin-bottom: 1em;
+    padding-bottom: 1em;
     gap: 2em;
+  }
+
+  .experience_content h1 {
+    width: 100vw;
+    margin-bottom: 5vh;
+    background: linear-gradient(90deg, rgba(225, 90, 81, 1) 0%, rgba(255, 255, 255, 0) 50%);
   }
   .content_text {
     width: 100vw;
+    padding-left: 0.5em;
+  }
+}
+
+/* tablets */
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .main_container {
+    flex-direction: column;
+  }
+
+  .container_nav {
+    width: 100vw;
+    height: 10vh;
+  }
+
+  .experience_content {
+    margin-top: 5vh;
+    width: 100vw;
+    padding-bottom: 1em;
+    gap: 2em;
+  }
+
+  .experience_content h1 {
+    width: 100vw;
+    margin-bottom: 5vh;
+    background: linear-gradient(90deg, rgba(225, 90, 81, 1) 0%, rgba(255, 255, 255, 0) 50%);
+  }
+  .content_text {
+    width: 100vw;
+    padding-left: 0.5em;
+  }
+}
+
+/* laptops and smallscreens */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container_nav {
+    width: 20vw;
+  }
+
+  .experience_content {
+    width: 80vw;
+    padding-bottom: 1em;
+    gap: 2em;
+  }
+
+  .experience_content h1 {
+    width: 100%;
+    background: linear-gradient(90deg, rgba(225, 90, 81, 1) 0%, rgba(255, 255, 255, 0) 50%);
+  }
+  .content_text {
+    width: 100%;
     padding-left: 0.5em;
   }
 }

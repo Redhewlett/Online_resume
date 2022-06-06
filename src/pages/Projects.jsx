@@ -12,9 +12,9 @@ export default function Projects() {
       <div className={styles.container_nav}>
         <SideNav />
       </div>
-      <div className={styles.content}>
+      <div className={styles.project_content}>
         <h1>Projects</h1>
-        <ScrollArea style={{ height: 950 }} type='always' scrollbarSize={12}>
+        <ScrollArea style={{ height: 760 }} type='always' scrollbarSize={12}>
           <div className={styles.project_elements}>
             {projects.map((project) => (
               <div key={project.id} className={styles.project_item}>

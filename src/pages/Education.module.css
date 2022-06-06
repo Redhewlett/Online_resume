@@ -7,11 +7,16 @@
   padding: 0px;
   margin: 0;
 }
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+}
 
 .education_content {
   opacity: 0;
   width: 80vw;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -102,19 +107,20 @@ h3 {
   list-style: url('../assets/icons/angle-right-solid.svg');
 }
 
-/* media queries - switching to an or*/
+/* media queries */
 /* phones */
 @media screen and (max-width: 480px) {
   .main_container {
     flex-direction: column;
   }
   .content {
-    margin-top: 37vw;
+    margin-top: 5vh;
+    justify-content: flex-start;
     padding-bottom: 2em;
   }
 
   .education_content {
-    margin-top: 10vw;
+    margin-top: 25vw;
     width: 100vw;
     padding-left: 0.5em;
   }
@@ -133,8 +139,99 @@ h3 {
     padding-left: 0.5em;
   }
 
+  h1 {
+    width: 100vw;
+    background: linear-gradient(90deg, rgba(225, 90, 81, 1) 0%, rgba(255, 255, 255, 0) 50%);
+  }
+
   .education_item p {
     width: 100vw;
+    padding: 0em;
+    text-align: left;
+  }
+}
+
+/* tablets */
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .main_container {
+    flex-direction: column;
+  }
+  .content {
+    margin-top: 5vh;
+    justify-content: flex-start;
+    padding-bottom: 2em;
+  }
+
+  .education_content {
+    margin-top: 10vh;
+    width: 100vw;
+    padding-left: 0.5em;
+  }
+
+  .education_item_header {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  h1,
+  h2,
+  h3,
+  .education_item_header span {
+    padding-left: 0.5em;
+  }
+
+  h1 {
+    width: 100vw;
+    background: linear-gradient(90deg, rgba(225, 90, 81, 1) 0%, rgba(255, 255, 255, 0) 50%);
+  }
+
+  .education_item p {
+    width: 100vw;
+    padding: 0em;
+    text-align: left;
+  }
+}
+
+/* laptops and smallscreens */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container_nav {
+    width: 20vw;
+  }
+  .content {
+    justify-content: flex-start;
+    padding-bottom: 2em;
+  }
+
+  .education_content {
+    margin-top: 10vh;
+    width: 80vw;
+    padding-left: 0.5em;
+  }
+
+  .education_item_header {
+    width: 100%;
+  }
+
+  h1,
+  .education_item_header span {
+    padding-left: 0.5em;
+  }
+  .education_item_header h2,
+  h3 {
+    padding-left: 0;
+  }
+
+  h1 {
+    width: 100%;
+    background: linear-gradient(90deg, rgba(225, 90, 81, 1) 0%, rgba(255, 255, 255, 0) 50%);
+  }
+
+  .education_item p {
+    width: 100%;
     padding: 0em;
     text-align: left;
   }

@@ -1,12 +1,12 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import styles from './SideNav.module.css'
 import { NavLink } from 'react-router-dom'
 import Avatar from '../assets/avatar.png'
 import { Collapse, Burger } from '@mantine/core'
 
 export default function SideNav() {
-  const [opened, setOpen] = useState(false)
-  const [menu, setMenu] = useState(false)
+  const [opened, setOpen] = useState(true)
+  const [menu, setMenu] = useState(true)
 
   const openMenu = () => {
     setOpen((o) => !o)

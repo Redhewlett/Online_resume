@@ -11,7 +11,7 @@
 
 nav a {
   list-style: none;
-  font-size: 1.8em;
+  font-size: 1.5vw;
   color: white;
   transition: all ease-in-out 330ms;
 }
@@ -25,7 +25,7 @@ nav a:hover {
 }
 
 .avatar {
-  border-radius: 100px;
+  border-radius: 50%;
   margin-bottom: 2em;
   background-color: white;
   overflow: hidden;
@@ -35,8 +35,8 @@ nav a:hover {
 }
 
 .avatar img {
-  width: 200px;
-  height: 200px;
+  width: 15vw;
+  height: 15vw;
   transform: translateY(10px);
 }
 
@@ -44,7 +44,8 @@ nav a:hover {
   display: flex;
   justify-content: flex-end;
 }
-
+/* media queries */
+/* phones */
 @media screen and (max-width: 480px) {
   .nav {
     width: 100vw;
@@ -55,7 +56,7 @@ nav a:hover {
   }
 
   nav a {
-    font-size: 6vw;
+    font-size: 4.5vw;
   }
 
   .avatar {
@@ -66,12 +67,55 @@ nav a:hover {
     width: 100%;
   }
   .collapse {
-    width: 100vw;
+    width: 40vw;
     text-align: right;
-    padding: 0vw 3vw 3vw 3vw;
+    padding: 3vw 3vw 3vw 3vw;
     background-color: #007fad;
+    border-radius: 0 0 0.5em 0.5em;
     position: absolute;
-    top: 21vw;
+    top: 15vw;
     right: 0px;
+  }
+}
+
+/* tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .nav {
+    width: 100vw;
+    height: 10vh;
+    gap: 0em;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  nav a {
+    font-size: 4.5vw;
+  }
+
+  .avatar {
+    display: none;
+  }
+
+  .burger {
+    width: 100%;
+  }
+
+  .collapse {
+    width: 40vw;
+    text-align: right;
+    padding: 4vw 1.5vw 1vw 1vw;
+    background-color: #007fad;
+    border-radius: 0 0 0.5em 0.5em;
+    position: absolute;
+    top: 10vw;
+    right: 0px;
+    z-index: 1;
+  }
+}
+
+/* laptops and smallscreens */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  nav a {
+    font-size: 2.2vw;
   }
 }
