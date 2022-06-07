@@ -83,15 +83,20 @@
   }
 
   .experience_content {
-    margin-top: 5vh;
+    margin-top: 10vh;
     width: 100vw;
-    padding-bottom: 1em;
+    height: auto;
+    padding-bottom: 2em;
     gap: 2em;
+  }
+
+  .content_text {
+    width: 100%;
+    padding-left: 0em;
   }
 
   .experience_content h1 {
     width: 100vw;
-    margin-bottom: 5vh;
     background: linear-gradient(90deg, rgba(225, 90, 81, 1) 0%, rgba(255, 255, 255, 0) 50%);
   }
   .content_text {
@@ -115,18 +120,28 @@
   .experience_content {
     margin-top: 5vh;
     width: 100vw;
-    padding-bottom: 1em;
+    height: auto;
+    padding-bottom: 2em;
     gap: 2em;
+  }
+
+  .content_text {
+    width: 90%;
+    padding-left: 0em;
   }
 
   .experience_content h1 {
     width: 100vw;
-    margin-bottom: 5vh;
+    margin-bottom: 2vh;
     background: linear-gradient(90deg, rgba(225, 90, 81, 1) 0%, rgba(255, 255, 255, 0) 50%);
   }
+
   .content_text {
-    width: 100vw;
+    width: 95vw;
     padding-left: 0.5em;
+  }
+  .content_text ul {
+    width: 100%;
   }
 }
 
