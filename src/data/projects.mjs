@@ -4,7 +4,8 @@ import p4 from '../assets/projects/p4_main.png'
 import p5 from '../assets/projects/p5_main.png'
 import p6 from '../assets/projects/p6_main.png'
 import p7 from '../assets/projects/p7_main.png'
-import rps from '../assets/projects/rockpaperscissors.png'
+import rps from '../assets/projects/rps_main.png'
+import ctdn from '../assets/projects/countdown_main.png'
 const projects = [
   {
     id: 'p2',
@@ -61,7 +62,7 @@ const projects = [
       'In an effort to build a community aspect among their employee a company wants to build a their private social media. In this first version employees can share articles and link with each other. they can also manage their articles. Re-applying CRUD basics.',
     repository: 'https://github.com/Redhewlett/P7-groupomania',
     url: 'none',
-    techno: 'Javascript Express ReactJs Mantine MySQL',
+    techno: 'ReactJs Express Mantine MySQL',
     imgUrl: p7
   },
   {
@@ -72,6 +73,15 @@ const projects = [
     url: 'https://redhewlett.github.io/RockPaperScissors/',
     techno: 'Javascript HTML CSS',
     imgUrl: rps
+  },
+  {
+    id: 'ctdn',
+    name: 'Countdown Clock',
+    description: 'One of front-end mentor s challenge. A countdown clock. I added my own twist: the clock counts 8 days from the current day, never ending.',
+    repository: 'https://github.com/Redhewlett/count_down_timer_fm',
+    url: 'https://redhewlett.github.io/count_down_timer_fm/',
+    techno: 'Javascript HTML CSS Responsive',
+    imgUrl: ctdn
   }
 ]
 
