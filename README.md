@@ -1,10 +1,15 @@
-<<<<<<< Updated upstream
+
+# My online resume
+
+This is my react online resume This was based on an other resume that was based on a boostrap model.
+=======
+
 # Getting Started with Create React App
 =======
 # My online resume
 
 This is my react online resume This was based on an other resume that was based on a boostrap model.
->>>>>>> Stashed changes
+
 
 I liked the layout, just took the base and made it my own. This is open Source, meaning you could copy main (delete the workflows) and use it.
 
