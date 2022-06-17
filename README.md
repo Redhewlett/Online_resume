@@ -1,70 +1,53 @@
+<<<<<<< Updated upstream
 # Getting Started with Create React App
+=======
+# My online resume
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is my react online resume This was based on an other resume that was based on a boostrap model.
+>>>>>>> Stashed changes
 
-## Available Scripts
+I liked the layout, just took the base and made it my own. This is open Source, meaning you could copy main (delete the workflows) and use it.
 
-In the project directory, you can run:
+Copy the repo, Yarn or Npm install and use yarn start to launch it localy. The rest of the commands in the package do what their name says
 
-### `yarn start`
+# -----------------------📁 Folder structure 📁-----------------------
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# 🖼 ASSETS 🖼
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This stores images.
 
-### `yarn test`
+- Icons stores the icons.
+- Projects stores images for the projects displayed in the app
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# 🧩COMPONENTS 🧩
 
-### `yarn build`
+Stores compenents, not much because this is not a complex app. No need to worry about scalability. The app is just there to display elements of a resume. Of
+course for a personal website i would fragment the app more to be able to build pages faster. (You can delete the movingSkill, this is for my own resume.)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# 📈 DATA 📉
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The place where data gets "fetched". All the files are self-explanatory. You can add more based on your needs, I will add experiences when I get some industry
+experiences. If you do don't forget to import the file where it's used, if you want this skills to bear images, import them from the file(follow the project
+file for example). Then when the file is ready you just loop over it with a map function.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# 📃 PAGES 📃
 
-### `yarn eject`
+Stores the pages.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# 🔧 BUILD 🔨
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Contains your build, which will be served localy with the appropriate command.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# 💽 STATIC 💽
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Used by the build, this is what you need to be pushed and deploy on an other branch.
 
-## Learn More
+# -----------------------📃 Page File Structure 📃-----------------------
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# 📥 IMPORTS 📥
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+First import what is native and based on the app, then comes the mantine imports or any other library you want to use.
 
-### Code Splitting
+# 📖 CONTENT 📖
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The functional component, the app does noting crazy so there are no functions declared.
