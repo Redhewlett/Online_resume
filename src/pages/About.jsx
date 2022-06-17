@@ -1,6 +1,6 @@
 import React from 'react'
-import SideNav from '../components/SideNav'
 import styles from './About.module.css'
+import SideNav from '../components/SideNav'
 import linkedin from '../assets/icons/linkedin-brands.svg'
 import git from '../assets/icons/github-brands.svg'
 

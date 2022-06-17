@@ -1,5 +1,6 @@
-import SideNav from '../components/SideNav'
+import React from 'react'
 import styles from './Skills.module.css'
+import SideNav from '../components/SideNav'
 import skills from '../data/skills.mjs'
 import languages from '../data/languages.mjs'
 import { Tooltip } from '@mantine/core'

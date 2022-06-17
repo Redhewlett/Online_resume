@@ -1,3 +1,4 @@
+import React from 'react'
 import styles from './Education.module.css'
 import SideNav from '../components/SideNav'
 import education from '../data/education.mjs'
