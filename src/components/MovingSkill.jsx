@@ -12,7 +12,8 @@ const Container = styled.div`
   }
   //tablets
   @media screen and (min-width: 481px) and (max-width: 768px) {
-    width: 90vw;
+    width: 90%;
+    padding: 0em;
   }
   //laptops and small screens
   @media screen and (min-width: 769px) and (max-width: 1024px) {
