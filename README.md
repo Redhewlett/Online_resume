@@ -1,21 +1,12 @@
-
 # My online resume
 
-This is my react online resume This was based on an other resume that was based on a boostrap model.
-=======
-
-# Getting Started with Create React App
-=======
-# My online resume
-
-This is my react online resume This was based on an other resume that was based on a boostrap model.
-
+This is my react online resume. It was inspired by an other resume based on a boostrap model.
 
 I liked the layout, just took the base and made it my own. This is open Source, meaning you could copy main (delete the workflows) and use it.
 
-Copy the repo, Yarn or Npm install and use yarn start to launch it localy. The rest of the commands in the package do what their name says
+Copy the repo, Yarn or Npm install and use Yarn or Npm start to launch it localy. The rest of the commands in the package do what their name says
 
-# -----------------------📁 Folder structure 📁-----------------------
+# ----------📁 Folder structure 📁----------
 
 # 🖼 ASSETS 🖼
 
@@ -47,7 +38,7 @@ Contains your build, which will be served localy with the appropriate command.
 
 Used by the build, this is what you need to be pushed and deploy on an other branch.
 
-# -----------------------📃 Page File Structure 📃-----------------------
+# ----------📃 Page File Structure 📃----------
 
 # 📥 IMPORTS 📥
 
