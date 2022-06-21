@@ -23,7 +23,7 @@ export default function About() {
             <br />
             Afterwards, I studied the art of Manga and the Japanese language / cultur.
             <br />I arrived at junction in my life and I had the opportunity to enroll for a training in web developpement.
-            <br />I didn't not hesitate and <strong>6 month</strong> I completed my training with OpenClassrooms, ready to code 😁.
+            <br />I didn't not hesitate and <strong>6 month later</strong> I completed my training with OpenClassrooms, ready to code 😁.
           </p>
         </div>
         <span>
