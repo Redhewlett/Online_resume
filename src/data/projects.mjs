@@ -6,6 +6,7 @@ import p6 from '../assets/projects/p6_main.png'
 import p7 from '../assets/projects/p7_main.png'
 import rps from '../assets/projects/rps_main.png'
 import ctdn from '../assets/projects/countdown_main.png'
+import todoApp from '../assets/projects/todo_app.png'
 const projects = [
   {
     id: 'p2',
@@ -82,6 +83,16 @@ const projects = [
     url: 'https://redhewlett.github.io/count_down_timer_fm/',
     techno: 'Javascript HTML CSS Responsive',
     imgUrl: ctdn
+  },
+  {
+    id: 'todoapp',
+    name: 'Todo App',
+    description:
+      'One of front-end mentor s challenge. A todo app with a dark theme. My version uses local storage to remember your tasks and theme preference.',
+    repository: 'https://github.com/Redhewlett/to_do_app_fm',
+    url: 'https://redhewlett.github.io/to_do_app_fm/',
+    techno: 'Javascript HTML CSS Responsive',
+    imgUrl: todoApp
   }
 ]
 
