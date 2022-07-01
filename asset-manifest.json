@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "https://redhewlett.github.io/online_resume/static/css/main.93c484a1.css",
-    "main.js": "https://redhewlett.github.io/online_resume/static/js/main.15ebe8e8.js",
+    "main.css": "https://redhewlett.github.io/online_resume/static/css/main.985a2aec.css",
+    "main.js": "https://redhewlett.github.io/online_resume/static/js/main.cdb073e1.js",
     "static/media/p4_main.png": "https://redhewlett.github.io/online_resume/static/media/p4_main.16550b091c227440ec5d.png",
     "static/media/p3_main.png": "https://redhewlett.github.io/online_resume/static/media/p3_main.6f0bd82de2d6d194d289.png",
     "static/media/man_standing.png": "https://redhewlett.github.io/online_resume/static/media/man_standing.92d71e2fa8d3413d49b3.png",
@@ -23,19 +23,21 @@
     "static/media/arrow-up-right-from-square-solid.svg": "https://redhewlett.github.io/online_resume/static/media/arrow-up-right-from-square-solid.593fc4e665a2b5339acb9500ad5c7dea.svg",
     "index.html": "https://redhewlett.github.io/online_resume/index.html",
     "static/media/javascript.svg": "https://redhewlett.github.io/online_resume/static/media/javascript.5629ee813a4c4b9f3e77.svg",
+    "static/media/us.svg": "https://redhewlett.github.io/online_resume/static/media/us.d21917ae9982e6ddb452.svg",
     "static/media/git.svg": "https://redhewlett.github.io/online_resume/static/media/git.691972813369570c8a4e.svg",
     "static/media/linkedin-brands.svg": "https://redhewlett.github.io/online_resume/static/media/linkedin-brands.f2f7d420f8ec14109e65abad03b5f32c.svg",
-    "static/media/mongodb.svg": "https://redhewlett.github.io/online_resume/static/media/mongodb.682e28312c6e85aacc79.svg",
+    "static/media/mongodb.svg": "https://redhewlett.github.io/online_resume/static/media/mongodb.e136c409f01ba971236a.svg",
     "static/media/css3.svg": "https://redhewlett.github.io/online_resume/static/media/css3.48fde97df5ef68b54506.svg",
-    "static/media/angle-right-solid.svg": "https://redhewlett.github.io/online_resume/static/media/angle-right-solid.ec6273c120cd8b8e1a9a.svg",
     "static/media/html5.svg": "https://redhewlett.github.io/online_resume/static/media/html5.280fcec471ee0f3842bc.svg",
     "static/media/Polygon.svg": "https://redhewlett.github.io/online_resume/static/media/Polygon.ed2cfe06b7cbd6dd9c0dff7f470cd762.svg",
     "static/media/Bubble.svg": "https://redhewlett.github.io/online_resume/static/media/Bubble.ef6b3711849d0c9b2acb7e39c1a268ac.svg",
-    "main.93c484a1.css.map": "https://redhewlett.github.io/online_resume/static/css/main.93c484a1.css.map",
-    "main.15ebe8e8.js.map": "https://redhewlett.github.io/online_resume/static/js/main.15ebe8e8.js.map"
+    "static/media/fr.svg": "https://redhewlett.github.io/online_resume/static/media/fr.03e210d9c2d260a9fe7c.svg",
+    "static/media/jp.svg": "https://redhewlett.github.io/online_resume/static/media/jp.4ecbd30ab2e8917f4887.svg",
+    "main.985a2aec.css.map": "https://redhewlett.github.io/online_resume/static/css/main.985a2aec.css.map",
+    "main.cdb073e1.js.map": "https://redhewlett.github.io/online_resume/static/js/main.cdb073e1.js.map"
   },
   "entrypoints": [
-    "static/css/main.93c484a1.css",
-    "static/js/main.15ebe8e8.js"
+    "static/css/main.985a2aec.css",
+    "static/js/main.cdb073e1.js"
   ]
 }
