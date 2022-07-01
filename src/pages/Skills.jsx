@@ -4,12 +4,14 @@ import SideNav from '../components/SideNav'
 import skills from '../data/skills.mjs'
 import languages from '../data/languages.mjs'
 import { Tooltip } from '@mantine/core'
+import MobileNav from '../components/MobileNav'
 
 export default function Skills() {
   return (
     <div className={styles.main_container}>
       <div className={styles.container_nav}>
         <SideNav />
+        <MobileNav />
       </div>
       <div className={styles.skills_content}>
         <h1>Skills</h1>
@@ -35,13 +37,14 @@ export default function Skills() {
             </div>
           ))}
         </div>
-        <h2>Learned Languages</h2>
+        <h2>Learned languages</h2>
         <div className={styles.learned_languages}>
           <ul>
             {languages.map((language) => (
               <li key={language.id}>
                 <div className={styles.learned_languages_item}>
-                  {language.name} <span> {language.level}</span>
+                  <img src={language.imgUrl} alt={language.name + '_flag'} />
+                  <span> {language.level}</span>
                 </div>
               </li>
             ))}

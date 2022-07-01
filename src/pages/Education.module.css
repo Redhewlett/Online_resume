@@ -7,10 +7,12 @@
   padding: 0px;
   margin: 0;
 }
+
 .content {
   display: flex;
+  height: 100vh;
+  overflow: auto;
   flex-direction: column;
-  justify-content: center;
   gap: 1em;
 }
 
@@ -89,6 +91,10 @@ h3 {
   animation-fill-mode: forwards;
 }
 
+ul ::marker {
+  color: #e15a51;
+}
+
 .education_item_header {
   width: 75vw;
   margin-bottom: 0.7em;
@@ -102,9 +108,8 @@ h3 {
 }
 
 .education_item ul {
-  padding-left: 3em;
+  padding-left: 4em;
   color: dimgray;
-  list-style: url('../assets/icons/angle-right-solid.svg');
 }
 
 /* media queries */
@@ -114,13 +119,13 @@ h3 {
     flex-direction: column;
   }
   .content {
-    margin-top: 5vh;
+    height: auto;
+    margin-top: 2vh;
     justify-content: flex-start;
     padding-bottom: 2em;
   }
 
   .education_content {
-    margin-top: 25vw;
     width: 100vw;
     padding-left: 0.5em;
   }
@@ -136,18 +141,22 @@ h3 {
   h2,
   h3,
   .education_item_header span {
-    padding-left: 0.5em;
+    padding-left: 0em;
   }
 
   h1 {
-    width: 100vw;
-    background: linear-gradient(90deg, rgba(225, 90, 81, 1) 0%, rgba(255, 255, 255, 0) 50%);
+    display: none;
+    background: none;
   }
 
   .education_item p {
-    width: 100vw;
+    width: 95vw;
     padding: 0em;
     text-align: left;
+  }
+
+  .education_item ul {
+    padding-left: 2em;
   }
 }
 
@@ -158,13 +167,14 @@ h3 {
     flex-direction: column;
   }
   .content {
-    margin-top: 5vh;
+    margin-top: 0vh;
+    height: auto;
     justify-content: flex-start;
     padding-bottom: 2em;
   }
 
   .education_content {
-    margin-top: 10vh;
+    margin-top: 2vh;
     width: 100vw;
     padding-left: 0.5em;
   }
@@ -180,18 +190,29 @@ h3 {
   h2,
   h3,
   .education_item_header span {
-    padding-left: 0.5em;
+    padding-left: 0em;
   }
 
   h1 {
-    width: 100vw;
-    background: linear-gradient(90deg, rgba(225, 90, 81, 1) 0%, rgba(255, 255, 255, 0) 50%);
+    display: none;
+    background: none;
+  }
+  h2 {
+    width: 95vw;
+    font-size: 4vw;
+  }
+  h3 {
+    width: 95vw;
+    font-size: 3vw;
   }
 
   .education_item p {
-    width: 100vw;
+    width: 90vw;
     padding: 0em;
     text-align: left;
+  }
+  .education_item ul {
+    padding-left: 2em;
   }
 }
 
@@ -207,27 +228,27 @@ h3 {
   }
 
   .education_content {
-    margin-top: 10vh;
+    margin-top: 0vh;
     width: 80vw;
     padding-left: 0.5em;
   }
 
   .education_item_header {
-    width: 100%;
+    width: 90%;
   }
 
   h1,
   .education_item_header span {
     padding-left: 0.5em;
   }
+  h2 {
+    width: 50%;
+    font-size: 2vw;
+  }
+
   .education_item_header h2,
   h3 {
     padding-left: 0;
-  }
-
-  h1 {
-    width: 100%;
-    background: linear-gradient(90deg, rgba(225, 90, 81, 1) 0%, rgba(255, 255, 255, 0) 50%);
   }
 
   .education_item p {

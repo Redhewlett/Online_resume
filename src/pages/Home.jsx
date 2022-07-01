@@ -20,14 +20,19 @@ export default function Home() {
         <img src={character} alt='black man with glasses standing' />
       </div>
       <div className={styles.poly}>
-        <NavLink to='/about' exact='true' style={{ color: 'white' }}>
-          <p>
-            TEDDY <br />
-            <strong>EDMOND </strong>
-          </p>
-        </NavLink>
+        <p>
+          TEDDY <br />
+          <strong>EDMOND </strong>
+        </p>
 
         <img src={Polygon} alt='blue polygone' />
+      </div>
+      <div className={styles.button_container}>
+        <button>
+          <NavLink to='/about' exact='true' style={{ color: 'white' }}>
+            Start visiting
+          </NavLink>
+        </button>
       </div>
     </div>
   )

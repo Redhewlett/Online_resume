@@ -63,7 +63,7 @@ const projects = [
       'In an effort to build a community aspect among their employee a company wants to build a their private social media. In this first version employees can share articles and link with each other. they can also manage their articles. Re-applying CRUD basics.',
     repository: 'https://github.com/Redhewlett/P7-groupomania',
     url: 'none',
-    techno: 'ReactJs Express Mantine MySQL',
+    techno: 'ReactJs ExpressJS API Mantine MySQL',
     imgUrl: p7
   },
   {
