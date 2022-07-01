@@ -241,11 +241,13 @@
   }
 
   .button_container {
-    height: 60vh;
-    bottom: -10vh;
+    height: 50vh;
+    bottom: -20vh;
   }
 
   .button_container button {
+    position: absolute;
+    bottom: 55vh;
     font-size: 5vw;
   }
 }
