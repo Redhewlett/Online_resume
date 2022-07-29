@@ -6,8 +6,10 @@ export default function SideNav() {
   return (
     <div>
       <nav className={styles.nav}>
-        <div className={styles.avatar}>
-          <img src={Avatar} alt='avatar black man with glasses' />
+        <div className={styles.border}>
+          <div className={styles.avatar}>
+            <img src={Avatar} alt='avatar black man with glasses' />
+          </div>
         </div>
         <NavLink to='/about' className={(navData) => (navData.isActive ? styles.active : 'none')} style={{ textDecoration: 'none' }}>
           <li>About</li>

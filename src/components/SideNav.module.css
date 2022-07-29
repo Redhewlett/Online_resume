@@ -34,13 +34,17 @@ nav a:hover {
 }
 
 .avatar {
-  border-radius: 200px;
-  margin-bottom: 2em;
+  border-radius: 50%;
   background-color: white;
   overflow: hidden;
   border: 3px solid white;
-  outline: 3px solid #e15a51;
   transition: all ease-in-out 250ms;
+}
+
+.border {
+  border-radius: 50%;
+  border: 3px solid #e15a51;
+  margin-bottom: 2em;
 }
 
 .avatar img {
