@@ -7,6 +7,7 @@ import p7 from '../assets/projects/p7_main.png'
 import rps from '../assets/projects/rps_main.png'
 import ctdn from '../assets/projects/countdown_main.png'
 import todoApp from '../assets/projects/todo_app.png'
+import comment_boundaries from '../assets/projects/comment_boundaries.png'
 const projects = [
   {
     id: 'p2',
@@ -93,6 +94,15 @@ const projects = [
     url: 'https://redhewlett.github.io/to_do_app_fm/',
     techno: 'Javascript HTML CSS Responsive',
     imgUrl: todoApp
+  },
+  {
+    id: 'cmbd',
+    name: 'Comment boundaries',
+    description: 'A Script that notifies your users if their comment could be harmfull to others.',
+    repository: 'https://github.com/Redhewlett/Comment-boundaries',
+    url: 'https://redhewlett.github.io/Comment-boundaries/',
+    techno: 'Typescript Tailwind React',
+    imgUrl: comment_boundaries
   }
 ]
 
