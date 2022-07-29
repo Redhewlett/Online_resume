@@ -3,9 +3,15 @@ import { useState } from 'react'
 
 const Container = styled.div`
   width: 40vw;
-  padding: 2em;
+  padding: 1em;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  button {
+    padding: 0.5em;
+  }
   //phones
   @media screen and (max-width: 480px) {
     width: 90vw;
@@ -21,8 +27,11 @@ const Container = styled.div`
   }
 `
 //TODO : put a play buttton and use props to insert play or pause inside the styled span!
-const MovingSpans = styled.span`
+const MovingSpans = styled.div`
   span {
+    color: white;
+    text-shadow: -1px -1px 3px rgba(80, 80, 80, 1);
+    font-family: 'Prosto One', system-ui;
     font-size: 2em;
     position: relative;
     animation-name: upAndDown;
@@ -31,38 +40,9 @@ const MovingSpans = styled.span`
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     animation-play-state: ${(props) => props.playState};
+    animation-delay: ${(props) => props.delay};
   }
-  & span:nth-of-type(1) {
-    font-size: 2.4em;
-    animation-delay: 100ms;
-  }
-  & span:nth-of-type(2) {
-    animation-delay: 200ms;
-  }
-  & span:nth-of-type(3) {
-    animation-delay: 300ms;
-  }
-  & span:nth-of-type(4) {
-    animation-delay: 400ms;
-  }
-  & span:nth-of-type(5) {
-    animation-delay: 500ms;
-  }
-  & span:nth-of-type(6) {
-    animation-delay: 600ms;
-  }
-  & span:nth-of-type(7) {
-    animation-delay: 700ms;
-  }
-  & span:nth-of-type(8) {
-    animation-delay: 500ms;
-  }
-  & span:nth-of-type(9) {
-    animation-delay: 900ms;
-  }
-  & span:nth-of-type(10) {
-    animation-delay: 1000ms;
-  }
+
   @keyframes upAndDown {
     0% {
       top: 0;
@@ -90,16 +70,13 @@ const MovingSpans = styled.span`
       text-shadow: -1px -1px 3px rgba(80, 80, 80, 1);
     }
   }
-  & button {
-    padding: 0.5em;
-    margin-left: 1em;
-  }
+
   //phones
   @media screen and (max-width: 480px) {
     span {
       font-size: 6vw;
     }
-    & span:nth-of-type(1) {
+    span:nth-of-type(1) {
       font-size: 7vw;
     }
   }
@@ -117,7 +94,7 @@ const MovingSpans = styled.span`
     span {
       font-size: 6vw;
     }
-    & span:nth-of-type(1) {
+    span:nth-of-type(1) {
       font-size: 7vw;
     }
   }
@@ -135,23 +112,26 @@ export default function MovingSkill() {
       setIsPlaying('running')
     }
   }
+
+  const string = 'hello world'
+  const strToArray = string.toUpperCase().split('')
+
+  const [stringArray] = useState(strToArray)
+
   return (
     <Container>
       <MovingSpans playState={isPlaying}>
-        <span>H</span>
-        <span>E</span>
-        <span>L</span>
-        <span>L</span>
-        <span>O </span>
-        <span>W</span>
-        <span>O</span>
-        <span>R</span>
-        <span>L</span>
-        <span>D</span>
-        <button type='button' onClick={handlePlayButton}>
-          Play
-        </button>
+        {stringArray.map(function (letter, i) {
+          return (
+            <span key={i} style={{ animationDelay: `${100 * i}ms` }}>
+              {letter}
+            </span>
+          )
+        })}
       </MovingSpans>
+      <button type='button' onClick={handlePlayButton}>
+        Play
+      </button>
     </Container>
   )
 }

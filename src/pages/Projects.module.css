@@ -18,9 +18,9 @@
   opacity: 0;
   width: 80vw;
   height: 100vh;
+  overflow: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 4em;
   animation-name: slidein;
   animation-duration: 1s;
@@ -61,24 +61,23 @@
 
 .project_item {
   display: flex;
-  width: 67vw;
   gap: 2em;
+}
+
+.project_item:nth-of-type(odd) {
+  background-color: WhiteSmoke;
 }
 
 .project_img {
   width: 30vw;
+  border: 2px solid lightgray;
+  border-radius: 0.5em;
   height: fit-content;
-  filter: blur(2px);
   animation-name: slidein;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
   transition: all ease-in-out 250ms;
-}
-
-.project_item:hover .project_img {
-  width: 30.5vw;
-  filter: blur(0px);
 }
 
 .project_item span {
@@ -104,12 +103,11 @@
 
 .icons {
   width: 2em;
-  transition: all ease-in-out 350ms;
+  transition: all ease-in-out 250ms;
 }
 
 .icons:hover {
   filter: invert(40%) sepia(62%) saturate(732%) hue-rotate(321deg) brightness(106%) contrast(78%);
-  transform: scale(1.1);
 }
 
 @media screen and (max-width: 480px) {
@@ -124,15 +122,15 @@
 
   .project_content {
     width: 100vw;
+    height: auto;
     margin-top: 5vh;
     padding-bottom: 1em;
     gap: 2em;
   }
 
   .project_content h1 {
-    width: 100vw;
-    margin-bottom: 5vh;
-    background: linear-gradient(90deg, rgba(225, 90, 81, 1) 0%, rgba(255, 255, 255, 0) 50%);
+    display: none;
+    background: none;
   }
 
   .project_elements {
@@ -178,6 +176,8 @@
 
   .project_content {
     width: 100vw;
+    height: auto;
+    margin-top: 5vh;
     padding-bottom: 1em;
     gap: 2em;
   }
@@ -243,15 +243,9 @@
     align-items: center;
   }
 
-  .project_item:hover .project_img {
-    width: 90%;
-    filter: blur(0px);
-  }
-
   .project_img {
     width: 90%;
     height: auto;
-    filter: blur(2px);
   }
 
   .project_item_side {

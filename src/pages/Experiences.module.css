@@ -29,7 +29,7 @@
 }
 
 .experience_content h1 {
-  background: rgb(225, 90, 81);
+  background: #e15a51;
   background: linear-gradient(90deg, rgba(225, 90, 81, 1) 0%, rgba(255, 255, 255, 0) 47%);
 }
 
@@ -50,10 +50,14 @@
 
 .content_text ul {
   margin-top: 1em;
-  list-style: url('../assets/icons/angle-right-solid.svg');
   display: flex;
   flex-direction: column;
   gap: 0.5em;
+  padding-left: 1em;
+}
+/*change bullet color */
+.content_text ul ::marker {
+  color: #e15a51;
 }
 
 @keyframes slidein {
@@ -96,8 +100,7 @@
   }
 
   .experience_content h1 {
-    width: 100vw;
-    background: linear-gradient(90deg, rgba(225, 90, 81, 1) 0%, rgba(255, 255, 255, 0) 50%);
+    display: none;
   }
   .content_text {
     width: 100vw;
@@ -131,9 +134,8 @@
   }
 
   .experience_content h1 {
-    width: 100vw;
-    margin-bottom: 2vh;
-    background: linear-gradient(90deg, rgba(225, 90, 81, 1) 0%, rgba(255, 255, 255, 0) 50%);
+    display: none;
+    background: none;
   }
 
   .content_text {

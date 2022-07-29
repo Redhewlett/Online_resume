@@ -10,10 +10,19 @@
 }
 
 nav a {
+  width: 100%;
   list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
   font-size: 1.5vw;
   color: white;
   transition: all ease-in-out 330ms;
+}
+
+nav li {
+  padding-bottom: 0.2em;
 }
 
 nav a:hover {
@@ -35,28 +44,24 @@ nav a:hover {
 }
 
 .avatar img {
-  width: 15vw;
-  height: 15vw;
+  width: 10vw;
+  height: 10vw;
   transform: translateY(10px);
 }
 
-.burger {
-  display: flex;
-  justify-content: flex-end;
-}
 /* media queries */
 /* phones */
 @media screen and (max-width: 480px) {
   .nav {
     width: 100vw;
-    height: 10vh;
+    height: 20vw;
     gap: 0em;
     flex-direction: row;
     justify-content: space-around;
   }
 
   nav a {
-    font-size: 4.8vw;
+    display: none;
   }
 
   .avatar {
@@ -86,14 +91,14 @@ nav a:hover {
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .nav {
     width: 100vw;
-    height: 10vh;
+    height: 15vw;
     gap: 0em;
     flex-direction: row;
     justify-content: space-around;
   }
 
   nav a {
-    font-size: 4.5vw;
+    display: none;
   }
 
   .avatar {

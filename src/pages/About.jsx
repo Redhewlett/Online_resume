@@ -3,12 +3,14 @@ import styles from './About.module.css'
 import SideNav from '../components/SideNav'
 import linkedin from '../assets/icons/linkedin-brands.svg'
 import git from '../assets/icons/github-brands.svg'
+import MobileNav from '../components/MobileNav'
 
 export default function About() {
   return (
     <div className={styles.main_container}>
       <div className={styles.container_nav}>
         <SideNav />
+        <MobileNav />
       </div>
       <div className={styles.about_content}>
         <h1>About</h1>
@@ -21,9 +23,9 @@ export default function About() {
             that allowed me to develop my creative / critical thinking and other skills. Believe it or not this is where I crossed path with a developer who
             introduced me to <strong>HTML, CSS and PHP</strong>.<br />
             <br />
-            Afterwards, I studied the art of Manga and the Japanese language / cultur.
+            Afterwards, I studied the art of Manga and the Japanese language / culture.
             <br />I arrived at junction in my life and I had the opportunity to enroll for a training in web developpement.
-            <br />I didn't not hesitate and <strong>6 month</strong> I completed my training with OpenClassrooms, ready to code 😁.
+            <br />I didn't not hesitate and <strong>6 month later</strong> I completed my training with OpenClassrooms, ready to code 😁.
           </p>
         </div>
         <span>

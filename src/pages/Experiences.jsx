@@ -1,12 +1,14 @@
 import styles from './Experiences.module.css'
 import SideNav from '../components/SideNav'
 import MovingSkill from '../components/MovingSkill'
+import MobileNav from '../components/MobileNav'
 
 export default function Experiences() {
   return (
     <div className={styles.main_container}>
       <div className={styles.container_nav}>
         <SideNav />
+        <MobileNav />
       </div>
       <div className={styles.experience_content}>
         <h1>Experiences</h1>
@@ -17,7 +19,7 @@ export default function Experiences() {
             If you went through the projects you have an idea of what I can do, but let me sum'up my trainning's experience:
           </p>
           <ul>
-            <li>Integrate a mockup and even expend on the original model using figma (ref: Booki and ohmyfood)</li>
+            <li>Integrate a mockup and even expend on the original model using figma</li>
             <li>Use Sass to creat maintainable / re-usable designs</li>
             <li>
               Creat animations using css transitions and keyframes

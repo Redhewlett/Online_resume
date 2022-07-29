@@ -6,6 +6,10 @@
   align-items: center;
   color: white;
 }
+
+.main_container {
+  font-family: 'Prosto One', system-ui;
+}
 .bubbles {
   justify-content: center;
   position: relative;
@@ -69,10 +73,6 @@
   right: 10vw;
 }
 
-.poly a {
-  text-decoration: none;
-}
-
 .poly img {
   opacity: 0;
   width: 20vmax;
@@ -81,10 +81,6 @@
   animation-delay: 300ms;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
-}
-
-.poly p:hover {
-  cursor: pointer;
 }
 
 .poly p {
@@ -104,6 +100,64 @@
 
 .poly p strong {
   color: #f49fad;
+}
+
+.button_container {
+  opacity: 0;
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0vh;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  animation-name: fadein;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.button_container button {
+  width: max-content;
+  height: max-content;
+  font-size: 2vw;
+  font-family: 'Prosto One', system-ui;
+  color: white;
+  font-weight: bold;
+  background-color: #007fad;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 2em;
+  animation-delay: 200ms;
+  animation-name: jump;
+  animation-duration: 4s;
+  animation-iteration-count: 5;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.button_container button a {
+  text-decoration: none;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 @keyframes slidein {
@@ -185,6 +239,17 @@
     font-size: 3.4vw;
     top: 9vw;
   }
+
+  .button_container {
+    height: 50vh;
+    bottom: -20vh;
+  }
+
+  .button_container button {
+    position: absolute;
+    bottom: 55vh;
+    font-size: 5vw;
+  }
 }
 
 /* tablets */
@@ -225,5 +290,15 @@
   .poly p {
     font-size: 2.4vw;
     top: 7vw;
+  }
+  .button_container {
+    height: 60vh;
+    bottom: -45vh;
+  }
+
+  .button_container button {
+    position: absolute;
+    bottom: 60vh;
+    font-size: 4vw;
   }
 }

@@ -6,6 +6,8 @@ import p6 from '../assets/projects/p6_main.png'
 import p7 from '../assets/projects/p7_main.png'
 import rps from '../assets/projects/rps_main.png'
 import ctdn from '../assets/projects/countdown_main.png'
+import todoApp from '../assets/projects/todo_app.png'
+import comment_boundaries from '../assets/projects/comment_boundaries.png'
 const projects = [
   {
     id: 'p2',
@@ -62,7 +64,7 @@ const projects = [
       'In an effort to build a community aspect among their employee a company wants to build a their private social media. In this first version employees can share articles and link with each other. they can also manage their articles. Re-applying CRUD basics.',
     repository: 'https://github.com/Redhewlett/P7-groupomania',
     url: 'none',
-    techno: 'ReactJs Express Mantine MySQL',
+    techno: 'ReactJs ExpressJS API Mantine MySQL',
     imgUrl: p7
   },
   {
@@ -82,6 +84,25 @@ const projects = [
     url: 'https://redhewlett.github.io/count_down_timer_fm/',
     techno: 'Javascript HTML CSS Responsive',
     imgUrl: ctdn
+  },
+  {
+    id: 'todoapp',
+    name: 'Todo App',
+    description:
+      'One of front-end mentor s challenge. A todo app with a dark theme. My version uses local storage to remember your tasks and theme preference.',
+    repository: 'https://github.com/Redhewlett/to_do_app_fm',
+    url: 'https://redhewlett.github.io/to_do_app_fm/',
+    techno: 'Javascript HTML CSS Responsive',
+    imgUrl: todoApp
+  },
+  {
+    id: 'cmbd',
+    name: 'Comment boundaries',
+    description: 'A Script that notifies your users if their comment could be harmfull to others.',
+    repository: 'https://github.com/Redhewlett/Comment-boundaries',
+    url: 'https://redhewlett.github.io/Comment-boundaries/',
+    techno: 'Typescript Tailwind React',
+    imgUrl: comment_boundaries
   }
 ]
 

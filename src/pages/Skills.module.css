@@ -75,15 +75,19 @@
   animation-fill-mode: forwards;
 }
 
+.learned_languages img {
+  border: 1px solid lightgray;
+}
+
 .learned_languages li {
   list-style: none;
   font-size: 1.5em;
   font-weight: bold;
-  padding-bottom: 1em;
+  padding-bottom: 2em;
 }
 
 .learned_languages_item {
-  align-items: baseline;
+  align-items: center;
 }
 .learned_languages_item span {
   font-size: 0.8em;
@@ -142,9 +146,12 @@
     width: 60vw;
     height: 80vh;
     gap: 2em;
-    margin-top: 13vw;
+    margin-top: 2vh;
   }
 
+  .skills_content h2 {
+    font-size: 5vw;
+  }
   .skills_content h2,
   .skills_content h1 {
     padding-left: 0em;
@@ -153,9 +160,7 @@
   }
 
   .skills_content h1 {
-    width: 100vw;
-
-    background: linear-gradient(90deg, rgba(225, 90, 81, 1) 0%, rgba(255, 255, 255, 0) 50%);
+    display: none;
   }
 
   .skills {
@@ -172,18 +177,19 @@
   .learned_languages {
     width: 100vw;
     display: flex;
-    justify-content: center;
-    padding-left: 0;
+    justify-content: left;
+    padding-left: 1em;
   }
   .learned_languages ul {
     padding-left: 0;
   }
   .learned_languages li {
     font-size: 5vw;
-    padding-bottom: 0.5em;
+    padding-bottom: 2em;
   }
 }
 
+/* tablets */
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .main_container {
     flex-direction: column;
@@ -194,16 +200,17 @@
   }
 
   .skills_content {
-    width: 60vw;
+    width: 100vw;
     height: 80vh;
+    align-items: center;
     gap: 2em;
-    margin-top: 10vw;
+    margin-top: 0;
   }
 
   .skills_content h2,
   .skills_content h1 {
     text-align: left;
-    padding-left: 0.5em;
+    padding-left: 0em;
   }
 
   .skills_content h1 {
@@ -212,7 +219,7 @@
   }
 
   .skills {
-    width: 100vw;
+    width: 90%;
     gap: 1em 4em;
     padding-left: 0;
     justify-content: space-around;
@@ -225,8 +232,8 @@
   .learned_languages {
     width: 100vw;
     display: flex;
-    justify-content: center;
-    padding-left: 0;
+    justify-content: left;
+    padding-left: 5vw;
   }
   .learned_languages ul {
     padding-left: 0;
@@ -238,7 +245,6 @@
 }
 
 /* laptop and smallscreens */
-
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .container_nav {
     width: 20vw;
