@@ -8,6 +8,7 @@ import rps from '../assets/projects/rps_main.png'
 import ctdn from '../assets/projects/countdown_main.png'
 import todoApp from '../assets/projects/todo_app.png'
 import comment_boundaries from '../assets/projects/comment_boundaries.png'
+import rpsls from '../assets/projects/rock_paper_scissors_lizard_spock.PNG'
 const projects = [
   {
     id: 'p2',
@@ -103,6 +104,16 @@ const projects = [
     url: 'https://redhewlett.github.io/Comment-boundaries/',
     techno: 'Typescript Tailwind React',
     imgUrl: comment_boundaries
+  },
+  {
+    id: 'rpsls',
+    name: 'Rock Paper Scissors Lizard Spock',
+    description:
+      'A game of Rock Paper Scissors with a little twist added (spock and lizard!), i already did this game in vanila js but this time im using react.',
+    repository: 'https://github.com/Redhewlett/rock_paper_scissors_lizard_spock_fm',
+    url: 'https://redhewlett.github.io/rock_paper_scissors_lizard_spock_fm/',
+    techno: 'React useReducer Tailwind',
+    imgUrl: rpsls
   }
 ]
 
