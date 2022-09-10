@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://redhewlett.github.io/online_resume/static/css/main.ff7c18d5.css",
-    "main.js": "https://redhewlett.github.io/online_resume/static/js/main.bd80e4a8.js",
+    "main.js": "https://redhewlett.github.io/online_resume/static/js/main.31331118.js",
     "static/media/p4_main.png": "https://redhewlett.github.io/online_resume/static/media/p4_main.16550b091c227440ec5d.png",
     "static/media/p3_main.png": "https://redhewlett.github.io/online_resume/static/media/p3_main.6f0bd82de2d6d194d289.png",
     "static/media/man_standing.png": "https://redhewlett.github.io/online_resume/static/media/man_standing.92d71e2fa8d3413d49b3.png",
@@ -15,6 +15,7 @@
     "static/media/p7_main.png": "https://redhewlett.github.io/online_resume/static/media/p7_main.759e84932955f6baa323.png",
     "static/media/rps_main.png": "https://redhewlett.github.io/online_resume/static/media/rps_main.8076f0e547ffa952dcf7.png",
     "static/media/countdown_main.png": "https://redhewlett.github.io/online_resume/static/media/countdown_main.26d1c89b10ac13897812.png",
+    "static/media/hangman.png": "https://redhewlett.github.io/online_resume/static/media/hangman.bbec7fcca9ccf571ffe2.png",
     "static/media/mysql.svg": "https://redhewlett.github.io/online_resume/static/media/mysql.c42c6adb47a400801f10.svg",
     "static/media/photoshop.svg": "https://redhewlett.github.io/online_resume/static/media/photoshop.8152a1c26d9e06f75a47.svg",
     "static/media/node.svg": "https://redhewlett.github.io/online_resume/static/media/node.cd452b6ee338ceee26df.svg",
@@ -36,10 +37,10 @@
     "static/media/fr.svg": "https://redhewlett.github.io/online_resume/static/media/fr.03e210d9c2d260a9fe7c.svg",
     "static/media/jp.svg": "https://redhewlett.github.io/online_resume/static/media/jp.4ecbd30ab2e8917f4887.svg",
     "main.ff7c18d5.css.map": "https://redhewlett.github.io/online_resume/static/css/main.ff7c18d5.css.map",
-    "main.bd80e4a8.js.map": "https://redhewlett.github.io/online_resume/static/js/main.bd80e4a8.js.map"
+    "main.31331118.js.map": "https://redhewlett.github.io/online_resume/static/js/main.31331118.js.map"
   },
   "entrypoints": [
     "static/css/main.ff7c18d5.css",
-    "static/js/main.bd80e4a8.js"
+    "static/js/main.31331118.js"
   ]
 }
