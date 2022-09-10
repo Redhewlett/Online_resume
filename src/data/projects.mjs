@@ -9,6 +9,7 @@ import ctdn from '../assets/projects/countdown_main.png'
 import todoApp from '../assets/projects/todo_app.png'
 import comment_boundaries from '../assets/projects/comment_boundaries.png'
 import rpsls from '../assets/projects/rock_paper_scissors_lizard_spock.PNG'
+import hangman from '../assets/projects/hangman.png'
 const projects = [
   {
     id: 'p2',
@@ -112,8 +113,17 @@ const projects = [
       'A game of Rock Paper Scissors with a little twist added (spock and lizard!), i already did this game in vanila js but this time im using react.',
     repository: 'https://github.com/Redhewlett/rock_paper_scissors_lizard_spock_fm',
     url: 'https://redhewlett.github.io/rock_paper_scissors_lizard_spock_fm/',
-    techno: 'React useReducer Tailwind',
+    techno: 'React useContext useReducer Tailwind',
     imgUrl: rpsls
+  },
+  {
+    id: 'hm',
+    name: 'Hangman',
+    description: 'The classic Hangman game, find the word before the stickman is hunged',
+    repository: 'https://github.com/Redhewlett/hangman',
+    url: 'https://redhewlett.github.io/hangman/',
+    techno: 'React useContext useReducer Tailwind',
+    imgUrl: hangman
   }
 ]
 
