@@ -16,7 +16,7 @@ export default function Projects() {
       <div className={styles.project_content}>
         <h1>Projects</h1>
         <div className={styles.project_elements}>
-          {projects.map((project) => (
+          {projects.reverse().map((project) => (
             <div key={project.id} className={styles.project_item}>
               <img src={project.imgUrl} alt={`project_${project.name}_screenshot`} className={styles.project_img} />
               <div className={styles.project_item_side}>
